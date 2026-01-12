@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatverse Arena | Event Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-trophy"></i> LetsReg.</span>
+        </div>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#upcoming">Events</a></li>
+            <li><a href="#results">Results</a></li>
+            <li class="mobile-close" onclick="toggleMenu()"><i class="fas fa-times"></i></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="theme-toggle" class="icon-btn" title="Switch Theme">
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('./Assets/HomeBg/download\ \(27\).jpg');"></div>
+            <div class="slide" style="background-image: url('./Assets/HomeBg/download\ \(28\).jpg');"></div>
+            <div class="slide" style="background-image: url('./Assets/HomeBg/Entrackr-Startup\ Funding\ News.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Unleash Your Talent & And Get Notified with The Upcoming Events</h1>
+            <p>Join the ultimate online functions: Music, Poetry, & Gaming.</p>
+            <a href="#upcoming" class="btn-main">Explore Events</a>
+        </div>
+    </section>
+
+    <section id="upcoming" class="section-padding">
+        <h2 class="section-title">Upcoming Battles</h2>
+        
+        <div class="card-container">
+            <div class="card" onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free', '9933058547')">
+                <div class="card-image">
+                    <img src="./Assets/Program-det/download (29).jpg" alt="Event">
+                    <span class="category">Music</span>
+                </div>
+                <div class="card-info">
+                    <h3>Golden Voice 2026</h3>
+                    <p><i class="fas fa-comments"></i> Room: Singing Stars</p>
+                    <p><i class="far fa-calendar-alt"></i> Feb 10, 2026</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openEventDetails('Ludo Championship', 'Game Zone', 'Host Priya', '2026-02-12', '6:00 PM', '₹50', '9933058547')">
+                <div class="card-image">
+                    <img src="./Assets/Program-det/download (29).jpg" alt="Event">
+                    <span class="category">Game</span>
+                </div>
+                <div class="card-info">
+                    <h3>Ludo Championship</h3>
+                    <p><i class="fas fa-comments"></i> Room: Game Zone</p>
+                    <p><i class="far fa-calendar-alt"></i> Feb 12, 2026</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openEventDetails('Grand Mushaira', 'Poetry Hub', 'Poet Amit', '2026-02-14', '9:00 PM', 'Free', '9933058547')">
+                <div class="card-image">
+                    <img src="./Assets/Program-det/download (29).jpg" alt="Event">
+                    <span class="category">Poetry</span>
+                </div>
+                <div class="card-info">
+                    <h3>Grand Mushaira</h3>
+                    <p><i class="fas fa-comments"></i> Room: Poetry Hub</p>
+                    <p><i class="far fa-calendar-alt"></i> Feb 14, 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="section-padding bg-alt">
+        <h2 class="section-title">Hall of Fame</h2>
+        
+        <div class="card-container">
+            
+            <div class="card result-card">
+                <div class="result-header">
+                    <h3>Golden Voice 2026</h3>
+                    <small>Ended: Jan 20</small>
+                </div>
+                <div class="podium-container">
+                    <div class="podium-spot secondary-winner">
+                        <div class="avatar-frame silver">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="2nd">
+                            <span class="rank-badge silver-bg">2</span>
+                        </div>
+                        <p class="winner-name">Rohan</p>
+                    </div>
+                    <div class="podium-spot main-winner">
+                        <i class="fas fa-crown gold-crown"></i>
+                        <div class="avatar-frame gold">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="1st">
+                            <span class="rank-badge gold-bg">1</span>
+                        </div>
+                        <p class="winner-name">Anjali</p>
+                    </div>
+                    <div class="podium-spot secondary-winner">
+                        <div class="avatar-frame bronze">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="3rd">
+                            <span class="rank-badge bronze-bg">3</span>
+                        </div>
+                        <p class="winner-name">Sneha</p>
+                    </div>
+                </div>
+                <div class="result-footer">
+                    <p>Host: RJ Rahul | Room: Singing Stars</p>
+                </div>
+            </div>
+
+            <div class="card result-card">
+                <div class="result-header">
+                    <h3>Ludo War Vol. 1</h3>
+                    <small>Ended: Jan 18</small>
+                </div>
+                <div class="podium-container">
+                    <div class="podium-spot secondary-winner">
+                        <div class="avatar-frame silver">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="2nd">
+                            <span class="rank-badge silver-bg">2</span>
+                        </div>
+                        <p class="winner-name">Priya</p>
+                    </div>
+                    <div class="podium-spot main-winner">
+                        <i class="fas fa-crown gold-crown"></i>
+                        <div class="avatar-frame gold">
+                            <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="1st">
+                            <span class="rank-badge gold-bg">1</span>
+                        </div>
+                        <p class="winner-name">Rahul K.</p>
+                    </div>
+                    <div class="podium-spot secondary-winner">
+                        <div class="avatar-frame bronze">
+                            <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="3rd">
+                            <span class="rank-badge bronze-bg">3</span>
+                        </div>
+                        <p class="winner-name">Amit</p>
+                    </div>
+                </div>
+                <div class="result-footer">
+                    <p>Host: Gaming King | Room: Ludo Pro</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LetsReg. Designed & Developed by <strong>Newton (@anonymous_01)</strong>.</p>
+    </footer>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="m-title">Event Name</h2>
+            <div class="modal-grid">
+                <p><strong><i class="fas fa-broadcast-tower"></i> Room:</strong> <span id="m-broad"></span></p>
+                <p><strong><i class="fas fa-user-tie"></i> Host:</strong> <span id="m-host"></span></p>
+                <p><strong><i class="far fa-calendar-check"></i> Date:</strong> <span id="m-date"></span></p>
+                <p><strong><i class="far fa-clock"></i> Time:</strong> <span id="m-time"></span></p>
+                <p><strong><i class="fas fa-ticket-alt"></i> Entry:</strong> <span id="m-fee"></span></p>
+                <p><strong><i class="fas fa-award"></i> Prize:</strong> <span id="m-prize" style="color: var(--secondary); font-weight: bold;"></span></p>
+            </div>
+            <a href="#" id="m-whatsapp" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Register via WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
