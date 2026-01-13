@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav class="navbar">
         <div class="logo">
             <i class="fas fa-trophy"></i> LetsReg.</span>
         </div>
-        
+
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#upcoming">Events</a></li>
@@ -36,7 +38,8 @@
         <div class="hero-slider">
             <div class="slide active" style="background-image: url('./Assets/HomeBg/download\ \(27\).jpg');"></div>
             <div class="slide" style="background-image: url('./Assets/HomeBg/download\ \(28\).jpg');"></div>
-            <div class="slide" style="background-image: url('./Assets/HomeBg/Entrackr-Startup\ Funding\ News.jpg');"></div>
+            <div class="slide" style="background-image: url('./Assets/HomeBg/Entrackr-Startup\ Funding\ News.jpg');">
+            </div>
         </div>
         <div class="hero-content">
             <h1>Unleash Your Talent & And Get Notified with The Upcoming Events</h1>
@@ -47,9 +50,10 @@
 
     <section id="upcoming" class="section-padding">
         <h2 class="section-title">Upcoming Battles</h2>
-        
+
         <div class="card-container">
-            <div class="card" onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free', '9933058547')">
+            <div class="card"
+                onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free','https://sharechat.com/chatroom/aa0d4432-4d7b-44d7-9097-414ecad1a866?d=n', '9933058547')">
                 <div class="card-image">
                     <img src="./Assets/Program-det/download (29).jpg" alt="Event">
                     <span class="category">Music</span>
@@ -60,7 +64,8 @@
                     <p><i class="far fa-calendar-alt"></i> Feb 10, 2026</p>
                 </div>
             </div>
-            <div class="card" onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free', '9933058547')">
+            <div class="card"
+                onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free', '9933058547')">
                 <div class="card-image">
                     <img src="./Assets/Program-det/download (29).jpg" alt="Event">
                     <span class="category">Music</span>
@@ -72,7 +77,8 @@
                 </div>
             </div>
 
-            <div class="card" onclick="openEventDetails('Ludo Championship', 'Game Zone', 'Host Priya', '2026-02-12', '6:00 PM', '₹50', '9933058547')">
+            <div class="card"
+                onclick="openEventDetails('Ludo Championship', 'Game Zone', 'Host Priya', '2026-02-12', '6:00 PM', '₹50', '9933058547')">
                 <div class="card-image">
                     <img src="./Assets/Program-det/download (29).jpg" alt="Event">
                     <span class="category">Game</span>
@@ -84,7 +90,8 @@
                 </div>
             </div>
 
-            <div class="card" onclick="openEventDetails('Grand Mushaira', 'Poetry Hub', 'Poet Amit', '2026-02-14', '9:00 PM', 'Free', '9933058547')">
+            <div class="card"
+                onclick="openEventDetails('Grand Mushaira', 'Poetry Hub', 'Poet Amit', '2026-02-14', '9:00 PM', 'Free', '9933058547')">
                 <div class="card-image">
                     <img src="./Assets/Program-det/download (29).jpg" alt="Event">
                     <span class="category">Poetry</span>
@@ -100,9 +107,9 @@
 
     <section id="results" class="section-padding bg-alt">
         <h2 class="section-title">Hall of Fame</h2>
-        
+
         <div class="card-container">
-            
+
             <div class="card result-card">
                 <div class="result-header">
                     <h3>Golden Voice 2026</h3>
@@ -188,8 +195,14 @@
                 <p><strong><i class="far fa-calendar-check"></i> Date:</strong> <span id="m-date"></span></p>
                 <p><strong><i class="far fa-clock"></i> Time:</strong> <span id="m-time"></span></p>
                 <p><strong><i class="fas fa-ticket-alt"></i> Entry:</strong> <span id="m-fee"></span></p>
-                <p><strong><i class="fas fa-award"></i> Prize:</strong> <span id="m-prize" style="color: var(--secondary); font-weight: bold;"></span></p>
+                <p><strong><i class="fas fa-award"></i> Prize:</strong> <span id="m-prize"
+                        style="color: var(--secondary); font-weight: bold;"></span></p>
             </div>
+            
+            <a href="#" id="m-chatroom" class="chatroom-btn" target="_blank">
+                <i class="fas fa-users"></i> Go to Chatroom
+            </a>
+
             <a href="#" id="m-whatsapp" class="whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i> Register via WhatsApp
             </a>
@@ -198,4 +211,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
