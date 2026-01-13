@@ -53,10 +53,10 @@
 
         <div class="card-container">
             <div class="card"
-                onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free','https://sharechat.com/chatroom/aa0d4432-4d7b-44d7-9097-414ecad1a866?d=n', '9933058547')">
+                onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free','5000/-', '9933058547')">
                 <div class="card-image">
                     <img src="./Assets/Program-det/download (29).jpg" alt="Event">
-                    <span class="category">Music</span>
+                    <span class="category">Ludo</span>
                 </div>
                 <div class="card-info">
                     <h3>Golden Voice 2026</h3>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="card"
-                onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free', '9933058547')">
+                onclick="openEventDetails('Golden Voice 2026', 'Singing Stars', 'RJ Rahul', '2026-02-10', '8:00 PM', 'Free','N/A', '9933058547')">
                 <div class="card-image">
                     <img src="./Assets/Program-det/download (29).jpg" alt="Event">
                     <span class="category">Music</span>
@@ -78,7 +78,7 @@
             </div>
 
             <div class="card"
-                onclick="openEventDetails('Ludo Championship', 'Game Zone', 'Host Priya', '2026-02-12', '6:00 PM', '₹50', '9933058547')">
+                onclick="openEventDetails('Ludo Championship', 'Game Zone', 'Host Priya', '2026-02-12', '6:00 PM', '₹50','N/A', '9933058547')">
                 <div class="card-image">
                     <img src="./Assets/Program-det/download (29).jpg" alt="Event">
                     <span class="category">Game</span>
@@ -91,7 +91,7 @@
             </div>
 
             <div class="card"
-                onclick="openEventDetails('Grand Mushaira', 'Poetry Hub', 'Poet Amit', '2026-02-14', '9:00 PM', 'Free', '9933058547')">
+                onclick="openEventDetails('Grand Mushaira', 'Poetry Hub', 'Poet Amit', '2026-02-14', '9:00 PM', 'Free','N/A', '9933058547')">
                 <div class="card-image">
                     <img src="./Assets/Program-det/download (29).jpg" alt="Event">
                     <span class="category">Poetry</span>
@@ -188,7 +188,9 @@
     <div id="eventModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
+
             <h2 id="m-title">Event Name</h2>
+
             <div class="modal-grid">
                 <p><strong><i class="fas fa-broadcast-tower"></i> Room:</strong> <span id="m-broad"></span></p>
                 <p><strong><i class="fas fa-user-tie"></i> Host:</strong> <span id="m-host"></span></p>
@@ -198,14 +200,21 @@
                 <p><strong><i class="fas fa-award"></i> Prize:</strong> <span id="m-prize"
                         style="color: var(--secondary); font-weight: bold;"></span></p>
             </div>
-            
-            <a href="#" id="m-chatroom" class="chatroom-btn" target="_blank">
-                <i class="fas fa-users"></i> Go to Chatroom
-            </a>
 
-            <a href="#" id="m-whatsapp" class="whatsapp-btn" target="_blank">
-                <i class="fab fa-whatsapp"></i> Register via WhatsApp
-            </a>
+            <hr style="border: 0; border-top: 1px solid #444; margin: 15px 0;">
+
+            <div class="registration-form">
+                <h3 style="font-size: 1rem; margin-bottom: 10px; color: var(--secondary);">Fill Details to Register</h3>
+
+                <input type="text" id="user-name" class="input-field" placeholder="Enter Your Name" required>
+                <input type="text" id="user-handle" class="input-field" placeholder="ShareChat Handle (e.g. @newton)"
+                    required>
+
+                <button onclick="sendToWhatsapp()" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Register via WhatsApp
+                </button>
+            </div>
+
         </div>
     </div>
 

@@ -526,23 +526,51 @@ footer {
     }
 }
 
-/* Inside style.css */
+/* --- Registration Form Styling --- */
 
-.chatroom-btn {
-    display: block;
+.input-field {
     width: 100%;
     padding: 12px;
-    background: #6f42c1; /* Purple Color */
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
+    margin-bottom: 10px;
+    border: 2px solid #444;
+    background: #333;
+    color: #fff;
     border-radius: 8px;
-    margin-top: 15px;
+    font-size: 0.9rem;
+    outline: none;
     transition: 0.3s;
 }
 
-.chatroom-btn:hover {
-    background: #5a32a3; /* Darker Purple on hover */
-    transform: translateY(-2px);
+.input-field:focus {
+    border-color: var(--primary);
+    background: #444;
+}
+
+/* Light Theme Adjustments for Inputs */
+body.light-theme .input-field {
+    background: #f0f0f0;
+    border-color: #ccc;
+    color: #333;
+}
+body.light-theme .input-field:focus {
+    background: #fff;
+    border-color: var(--primary);
+}
+
+.whatsapp-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #25D366;
+    color: white;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.whatsapp-btn:hover {
+    background: #1ebc57;
 }
